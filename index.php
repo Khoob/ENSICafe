@@ -12,5 +12,6 @@
 			<h3 id="creerCompte">
 			<a href="creerCompte.html">Créer votre compte</a>
 			</h3>
-</body>
-</html>
+<?php
+	include("footer.php")
+?>
