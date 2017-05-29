@@ -5,37 +5,70 @@ text-align:center;
 header{
 	width:100%;
 	top:0;
-    display : inline-block;
 }
 
-header h1{
+h1{
 	font-size:60px;
     width: 100%;
-    text-align: center;
 
 }
 
-#img_gauche{
-    text-align: left; 
+h1 #logo_gauche{
+    object-position: left; 
 }
 
-#img_droite{
-     text-align: right; 
+h1 #logo_droite{
+     object-position: right; 
 }
 
 nav {
-    display: inline-block;
-    text-align: right;
+   
     width: 100%;
-    line-height: 50px;
+    line-height: 100px;
 }
 
-#recherche .loupe {
-    background-image: url(img/loupe.png);
-    width: 20px;
-    height: 20px;
+#navigation{
+    display: inline-block;
+    width:100%;
+}
+.menu{
+    display: inline-block;
+    width:49%;
+}
+.recherche{
+    display: inline-block;
+    width:49%;
+}
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu-deroulant {
+    text-align: right;
+}
+#menu-deroulant li {
+    display: inline-block;
+    line-height: 20px;
+}
+#menu-deroulant ul li {
+    display: inherit;
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+	color:#000;
+}
+#menu-deroulant ul {
+    position: absolute;
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
 }
 
+#menu-deroulant li:hover ul {
+    left: auto;
+}
 body{
 	
 	color: black;
