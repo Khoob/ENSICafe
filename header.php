@@ -8,9 +8,9 @@
 <body>
 	<header>
 			<h1>
-                <a href="index.php"><img id="img_droite" src="img/logo.jpg" width="50px" height="50px" title="logo-ensiscafe" alt="ENSICafe" /></a>
-			<a href="index.php">ENSICafé</a>
-                <a href="http://www.ensisa.uha.fr/" target="_blank"><img id="img_gauche" src="img/logo_ensisa.jpg" width="50px" height="50px" title="logo-ensisa" alt="ENSISA" /></a>
+            <img id="img_gauche" src="img/logo.jpg" width="50px" height="50px" title="logo-ensiscafe" alt="ENSICafe" onclick="alert('Laisses cette image tranquille !');"/>
+			<a href="index.html">ENSICafé</a>
+            <img id="img_droite" src="img/logo_ensisa.jpg" width="50px" height="50px" title="logo-ensisa" alt="ENSISA" onclick="alert('C'est le logo de lENSISA :D');"/>
 			</h1>
          
 			<!--<nav>
