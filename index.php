@@ -1,5 +1,5 @@
 <?php
-	include("head.php")
+	include("head.php");
 ?>
 	<header>
 			<h1>
@@ -13,5 +13,5 @@
 			<a href="creerCompte.html">Créer votre compte</a>
 			</h3>
 <?php
-	include("footer.php")
+	include("footer.php");
 ?>
