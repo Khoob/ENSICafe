@@ -13,11 +13,11 @@ h1{
 
 }
 
-h1 #logo_gauche{
+h1 #img_gauche{
     object-position: left; 
 }
 
-h1 #logo_droite{
+h1 #img_droite{
      object-position: right; 
 }
 
