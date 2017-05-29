@@ -1,1 +1,2 @@
-alert('Nicolas est moche');
+var nom = "Nolwenn";
+alert(nom);
