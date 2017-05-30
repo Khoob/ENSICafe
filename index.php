@@ -1,7 +1,7 @@
 <?php
 	include("header.php");
 ?>
-<a href="#" onmouseover="alert('Bonjour étranger!');"<p> Cette phrase de test est vraiment géniale !</p></a>
+<a href="#" onmouseover="alert('Bonjour étranger!');"><p> Cette phrase de test est vraiment géniale !</p></a>
 <!-- test de JavaScript d'Antoine :3-->
 <script type="text/javascript">
   <!--
