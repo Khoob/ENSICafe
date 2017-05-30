@@ -18,7 +18,14 @@
     alert('Fin de la page');
   //-->
   </script>
-
+<!-- Fil d'actualité -->
+<script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="news.js" type="text/javascript"></script>
+<ul>
+    <?php
+        include ('news.php');
+    ?>
+</ul>
 <!-- Page de connection			
             <h3 id="login">
 			<a href="Login.html">Connexion</a>
