@@ -32,6 +32,9 @@
 		<label for="mdp">Votre mot de passe</label>
 		<input type="text" name="mdp" placeholder="Votre mot de passe"/>
 		</p>
+		<p>
+		<input type="submit" name="envoi" value="S'inscrire"/>
+		</p>
 		</form>
 		</section>
 <?php
