@@ -23,5 +23,11 @@
 			<a href="Login.html">Connexion</a>-->
              <?php
             include('navigation.php'); 
+			try{
+	$bdd=new PDO('mysql:host=localhost;dbname=ENSICafé;charset=utf8','root','');
+	}
+	catch(Exception $e){
+		die('Erreur :'.$e->getMessage());
+	}
         ?>
 	</header>

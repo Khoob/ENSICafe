@@ -1,5 +1,4 @@
 <?php
-	include("head.php");
 	include("header.php");
 ?>
 	<section id="creerCompte">
@@ -21,8 +20,11 @@
 		<input type="date" name="date" placeholder="AAAAMMJJ"/>
 		</p>
 		<p>
-		<label for="genre">Votre genre</label>
-		<input type="text" name="genre" placeholder="Homme ou Femme"/>
+		<label for="genre">Votre genre </label>
+		<select name="genre">
+					<option value="homme">Homme</option>
+					<option value="femme">Femme</option>
+				</select>
 		</p>
 		<p>
 		<label for="fonction">Votre fonction</label>
@@ -36,7 +38,7 @@
 		<input type="submit" name="envoi" value="S'inscrire"/>
 		</p>
 		</form>
-		</section>
+	</section>
 <?php
 	include("footer.php");
 ?>
