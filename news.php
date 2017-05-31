@@ -22,6 +22,6 @@ while($res = $req->fetch()){
         print '<script>setId('.$res['id'].');</script>';
         $first = false;
     }
-    print '<li><span class="id">'.$res['id'].'</span>'.$res['contenu'].'</li>';
+    print '<li>'.$res['contenu'].'</li>';
 }
 ?>
