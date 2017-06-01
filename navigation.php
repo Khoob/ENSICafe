@@ -11,11 +11,8 @@
         <ul id="menu-deroulant">
             <li><a href="profil.php"><img src="img/profil.jpg" width="20px" height="20px" title="profil" alt="profil"/></a>
             </li>
-            <li><a href="profil.php">Profil</a>
-                <ul>
-                    <li><a href="parametres.php">Paramètres</a></li>
-                    <li><a href="deconnexion.php">Déconnexion</a></li>
-                </ul>
+            <li>
+                <a href="profil.php">Profil</a>
             </li>
             <li><a href="club.php">Clubs</a>
             </li>
