@@ -8,16 +8,15 @@ try{
     }
 if(!empty($_POST['prenom'])){
 				$prenom = htmlspecialchars($_POST['prenom']);
-    echo $prenom;
-                $type = $_POST['type'];
-    echo $type;
-                $id=$bdd->query('SELECT id FROM profil WHERE profil.prenom="'.$prenom.'"');
-                $res=$id->fetch();
-    echo $res['id'];
+               			$type = $_POST['type'];
+ 
+    			        $id=$bdd->query('SELECT id FROM profil WHERE profil.prenom="'.$prenom.'"');
+                		$res=$id->fetch();
+  
 				if(!empty($_POST['contenu'])){
 					$contenu = htmlspecialchars($_POST['contenu']);
-                    $insertion = $bdd->prepare('INSERT INTO actu VALUES(NULL,"'.$res['id'].'","'.$type.'",NOW(),"'.$contenu.'",NULL,NULL)'); 
-                    $insertion->execute();           
+                    			$insertion = $bdd->prepare('INSERT INTO actu VALUES(NULL,"'.$res['id'].'","'.$type.'",NOW(),"'.$contenu.'",NULL,NULL)'); 
+                    			$insertion->execute();           
 				}
         }
 ?>
