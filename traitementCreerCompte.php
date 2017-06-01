@@ -19,6 +19,7 @@
 									echo"<p>Félicitation ".$nom." ".$prenom.", vous vous êtes bien inscrit sur ENSICafé.</p>";
 									$insertion=$bdd->prepare('INSERT INTO profil VALUES(NULL,"'.$nom.'","'.$prenom.'","'.$mel.'","'.$date.'","'.$genre.'","'.$fonction.'","'.$mdp.'")');
 									$insertion->execute();
+									redir("Login.php");
 								}
 							}
 						}
