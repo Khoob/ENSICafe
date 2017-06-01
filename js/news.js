@@ -12,7 +12,6 @@ function chargerNews() {
         url: 'news.php?id=' + dernier_id,
         success: function (data) {
             if (data !== '') {
-                alert(data)
                 $('#actus').prepend(data);
                 $('#actus li:last-child').remove();
             }
