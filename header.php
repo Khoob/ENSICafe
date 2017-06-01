@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+ <?php minicode="php"><?php session_start(); ?></minicode>
 <html lang='fr'>
 <head>
 <link rel='stylesheet' href='style.css' />
