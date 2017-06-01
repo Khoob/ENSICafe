@@ -1,8 +1,23 @@
-//var prenom = prompt("Donnez la somme en euros :");
-//var nom = prompt ("quel est ton nom ?");
-//alert("Vous vous appelez " + prenom);
-function conversion() {
-    var somme = prompt("Donnez la somme en euros :");
-    var resultat = somme * 6.55957;
-    alert(somme + "E\n" + resultat + " F");
-    }
+function test(){
+// initialisation
+var zCode = "<liste>\n";
+var saisie;
+
+// boucle
+while(saisie = prompt("Contenu de la puce ?"))
+        zCode += "<puce>" + saisie + "</puce>\n";
+
+// finitions
+if(zCode == '<liste>\n')
+        zCode = '';
+else
+        zCode += "</liste>";
+
+alert(zCode);
+}
+
+function boucle() {
+    var i;
+    for(i=0; i<5;i++)
+        alert(i);
+}
