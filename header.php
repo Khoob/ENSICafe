@@ -30,5 +30,11 @@
 	catch(Exception $e){
 		die('Erreur :'.$e->getMessage());
 	}
+	// la fonction de redirection ------------ 
+	function redir($url){ 
+		echo "<script language=\"javascript\">"; 
+		echo "window.location='$url';"; 
+		echo "</script>"; 
+	} 
         ?>
 	</header>
