@@ -1,10 +1,4 @@
 <?php
-	// la fonction de redirection ------------ 
-	function redir($url){ 
-		echo "<script language=\"javascript\">"; 
-		echo "window.location='$url';"; 
-		echo "</script>"; 
-	} 
 	$reponse=$bdd->query('SELECT id,mail,mdp FROM profil');
 	include('header.php');
 	if(isset($_POST['envoi'])){
