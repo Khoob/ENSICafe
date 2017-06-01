@@ -6,12 +6,8 @@
         die('Erreur : '.$e->getMessage()); 
     }
 
-/*$req=$bdd->prepare("SELECT id,contenu FROM `news` ORDER BY date DESC LIMIT 5");
-
-$req2=$bdd->prepare("SELECT id,contenu FROM `news` WHERE id>'".addslashes($_GET['id'])."' ORDER BY id LIMIT 1");*/
-
 if(!isset($_GET['id']))
-  $req=$bdd->prepare("SELECT id,contenu FROM `news` ORDER BY date DESC LIMIT 5");
+  $req=$bdd->prepare("SELECT id,contenu FROM `news` ORDER BY date DESC LIMIT 3");
 else
  $req=$bdd->prepare("SELECT id,contenu FROM `news` WHERE id>'".addslashes($_GET['id'])."' ORDER BY id LIMIT 1");
 
