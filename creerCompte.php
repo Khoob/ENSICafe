@@ -13,7 +13,7 @@
 		</p>
 		<p>
 		<label for="mel">Votre mél</label>
-		<input type="text" name="mel" placeholder="Votre mél"/>
+		<input type="email" name="mel" placeholder="Votre mél"/>
 		</p>
 		<p>
 		<label for="date">Votre date de naissance</label>
@@ -22,13 +22,13 @@
 		<p>
 		<label for="genre">Votre genre </label>
 		<select name="genre">
-					<option value="homme">Homme</option>
-					<option value="femme">Femme</option>
-				</select>
+			<option value="homme">Homme</option>
+			<option value="femme">Femme</option>
+		</select>
 		</p>
 		<p>
 		<label for="fonction">Votre fonction</label>
-		<input type="text" name="fonction" placeholder="Ensaignant, Etudiant ou Ancien Etudiant"/>
+		<input type="text" name="fonction" placeholder="Enseignant, Etudiant ou Ancien Etudiant"/>
 		</p>
 		<p>
 		<label for="mdp">Votre mot de passe</label>

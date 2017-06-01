@@ -6,7 +6,7 @@
 		<form method="post" action="traitementLogin.php">
 		<p>
 		<label for="mel">Votre mél</label>
-		<input type="text" name="mel" placeholder="Votre mél"/>
+		<input type="email" name="mel" placeholder="Votre mél"/>
 		</p>
 		<p>
 		<label for="mdp">Votre mot de passe</label>
