@@ -1,6 +1,6 @@
-//<?php
-	//include("header.php");
-//?>
+<?php
+	include("header1.php");
+?>
 	<section id="Inscription">
 		<form method="post" action="traitementInscription.php">
 		<p>
