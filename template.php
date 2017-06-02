@@ -1,7 +1,12 @@
 <?php
     include('header.php');
+try{
+	$bdd=new PDO('mysql:host=localhost;dbname=ENSICafé;charset=utf8','root','');
+	}
+	catch(Exception $e){
+		die('Erreur :'.$e->getMessage());
+	}
 ?>
-
 <!-- Contenu principal -->
 
 <div class="container">
