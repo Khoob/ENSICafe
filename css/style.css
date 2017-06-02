@@ -433,7 +433,8 @@ body {
 
 /* Footer */
 
-.footer {
+.footer,
+.footer-fixed {
     position: relative;
     color: #f7f3d3;
     background-color: #25252d;
@@ -445,7 +446,12 @@ body {
     text-align: center;
 }
 
-.footer p {
+.footer-fixed {
+    position: fixed;
+}
+
+.footer p,
+.footer-fixed p {
     display: inline;
     line-height: 30px;
 }

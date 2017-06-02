@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <title>ENSICafé</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container-fluid">
+            <div class="col-sm-9">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><h1>ensicafé <small>le réseau social dopé à la caféine</small></h1></a>
+            </div>
+            </div>
+            <div class="col-sm-3">
+            <div>
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-check"></span> S'inscrire</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Se connecter</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="row">
+            <div class="col-sm-6">
+                <button id="menu-toggle" onclick="toggleMenu(event)" type="button" class="btn btn-menu btn-lg">
+                    <span class="glyphicon glyphicon-forward"></i>
+                </button>
+            </div>
+
+            <div class="col-sm-6">
+                <div id="sidebar-wrapper">
+                    <ul class="sidebar-nav">
+                        <li class="sidebar-brand">
+                            <a href="#">
+                                Profil
+                            </a>
+                        </li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blabla</a></li>
+                        <li><a href="#">Marshmallow</a></li>
+                        <li><a href="#">Café</a></li>
+                        <li><a href="#">Toast</a></li>
+                        <li><a href="#">Meringue</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container">
+            <!-- Carousel News -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="carousel slide" data-ride="carousel" id="carousel-news">
+                            <!-- Bottom Carousel Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-news" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-news" data-slide-to="1"></li>
+                                <li data-target="#carousel-news" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Carousel Slides / News -->
+                            <div class="carousel-inner">
+                                
+                                <!-- News 1 -->
+                                <div class="item active">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-3 text-center">
+                                                <img class="img-circle" src="http://www.reactiongifs.com/r/overbite.gif" style="width: 75px;height:75px;">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <h4>Accord de Paris : l’UE s’inquiète de la décision américaine</h4>
+                                                <span>Dans l’attente de l’annonce d’une sortie éventuelle des Etats-Unis, l’Union européenne, la Chine et la Russie défendent le traité visant à limiter le réchauffement climatique.</span>
+                                                <a href="#"><span class="news-more"> Lire la suite...</span></a>
+                                                <br><small>14 juin 2028</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+
+                                <!-- News 2 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-3 text-center">
+                                                <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/mijustin/128.jpg" style="width: 100px;height:100px;">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <h4>Trump, cet objet littéraire</h4>
+                                                <span>Donald Trump est-il un personnage de roman ? Depuis son élection, l’Amérique découvre de vertigineuses ressemblances entre lui et des protagonistes de romans anglo-saxons.</span><a href="#"><span class="news-more"> Lire la suite...</span></a>
+                                                <br><small>21 décembre 2012</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+
+                                <!-- News 3 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-3 text-center">
+                                                <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/keizgoesboom/128.jpg" style="width: 100px;height:100px;">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <h4>La fusion de deux trous noirs fait trembler à nouveau la Terre</h4>
+                                                <span>Aux Etats-Unis, une expérience a pour la troisième fois détecté le passage de minuscules distorsions de l’espace-temps causées par la danse de deux trous noirs. Une prouesse technologique.</span><a href="#"><span class="news-more"> Lire la suite...</span></a>
+                                                <br><small>Date</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+
+                            </div>
+
+                            <!-- Carousel Prev/Next Buttons -->
+                            <a data-slide="prev" href="#carousel-news" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a data-slide="next" href="#carousel-news" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            <!-- #carousel-news -->
+            
+            <!-- Post -->
+                <div class="row">
+                    <div class="col-sm-10 col-lg-offset-1">
+
+                        <!-- Post 1 -->
+                        <div class="[panel panel-default] panel-custom">
+                            <div class="panel-heading">
+                                <button type="btn" class="close">
+                                    <span aria-hidden="true">&times;</span>
+                                    <span class="sr-only">Close</span>
+                                </button>
+                                <img class="[ img-circle pull-left ]" src="img/profile_test1.png" alt="profile.jpg"/>
+                                <h3>Le chat blasé du designer</h3>
+                                <span class="label label-info">Chat</span>
+                                <span class="label label-warning">Mangeur de croquettes</span>
+                                <h5><span>Il y a 5 minutes</span></h5>
+                            </div>
+
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+
+                            <div class="panel-footer">
+                                <div class="input-placeholder">Commenter...</div>
+                                <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                                
+                                <a class="btn icon-btn btn-primary" href="#"><span class="glyphicon btn-glyphicon glyphicon-thumbs-up img-circle text-primary"></span>Like</a>
+                            </div>
+                        </div>
+                        <!-- /#post1 -->
+
+                        <!-- Post 2 -->
+                        <div class="[panel panel-default] panel-custom">
+                            <div class="panel-heading">
+                                <button type="btn" class="close">
+                                    <span aria-hidden="true">&times;</span>
+                                    <span class="sr-only">Close</span>
+                                </button>
+                                <img class="[ img-circle pull-left ]" src="img/profile_test2.jpg" alt="profile.jpg"/>
+                                <h3>Kermit</h3>
+                                <span class="label label-success">Grenouille</span>
+                                <h5><span>Il y a 8 minutes et 14 nanosecondes</span></h5>
+                            </div>
+
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+
+                            <div class="panel-footer">
+                                <div class="input-placeholder">Commenter...</div>
+                            </div>
+                        </div>
+                        <!-- /#post2 -->
+
+                        <!-- Post 1 -->
+                        <div class="[panel panel-default] panel-custom">
+                            <div class="panel-heading">
+                                <button type="btn" class="close">
+                                    <span aria-hidden="true">&times;</span>
+                                    <span class="sr-only">Close</span>
+                                </button>
+                                <img class="[ img-circle pull-left ]" src="img/profile_test1.png" alt="profile.jpg"/>
+                                <h3>Le chat blasé du designer</h3>
+                                <span class="label label-info">Chat</span>
+                                <span class="label label-warning">Mangeur de croquettes</span>
+                                <h5><span>Il y a 5 minutes</span></h5>
+                            </div>
+
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+
+                            <div class="panel-footer">
+                                <div class="input-placeholder">Commenter...</div>
+                                <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                                
+                                <a class="btn icon-btn btn-primary" href="#"><span class="glyphicon btn-glyphicon glyphicon-thumbs-up img-circle text-primary"></span>Like</a>
+                            </div>
+                        </div>
+                        <!-- /#post1 -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- /#post -->
+
+            <!-- Chatbox -->
+                <div class="row">
+                    <div class="col-md-3 pull-right chatbox-panel">
+
+                        <!-- Chatbox header -->
+                        <div class="panel">
+                            <div class="panel-heading" id="accordion" data-toggle="collapse" data-parent="#accordion" href="#chatbox-collapse">
+                                <span class="glyphicon glyphicon-comment"></span><span class="chatbox-name"> Chat général</span>
+                                <div class="btn-group pull-right" data-toggle="dropup">
+                                    <span class="glyphicon glyphicon-chevron-down"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /#chatbox-header -->
+
+                        <!-- Chatbox window -->
+                        <div class="panel-collapse collapse" id="chatbox-collapse">
+                            <!-- Chatbox body -->
+                            <div class="panel-body">
+                                <ul class="chat">
+                                    <!-- Message 1 -->
+                                    <li class="left clearfix">
+                                        <span class="chat-img pull-left"><img src="img/profile_test1.png" alt="user_profile" class="img-circle" /></span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">Le chat</strong>
+                                                <span class="label label-info">Chat</span>
+                                                <small class="pull-right text-muted"><span class="glyphicon glyphicon-time"></span>Il y a 15 min</small>
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <!-- Message 2 -->
+                                    <li class="right clearfix">
+                                        <span class="chat-img pull-right"><img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="user_profile" class="img-circle" /></span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">[Pseudo]</strong>
+                                                <span class="label label-danger">Tag</span>
+                                                <small class="pull-right text-muted"><span class="glyphicon glyphicon-time"></span>[Date]</small>
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <!-- Message 3 -->
+                                    <li class="left clearfix">
+                                        <span class="chat-img pull-left"><img src="img/profile_test1.png" alt="user_profile" class="img-circle" /></span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">Le chat</strong>
+                                                <span class="label label-info">Chat</span>
+                                                <small class="pull-right text-muted"><span class="glyphicon glyphicon-time"></span>Il y a 5 min</small>
+                                            </div>
+                                            <p>
+                                                Meow meow meow 
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <!-- Chatbox type message -->
+                            <div class="panel-footer">
+                                <div class="input-group">
+                                    <input id="btn-input" type="text" class="form-control input-sm" placeholder="Écrire un message..." />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-warning btn-sm" id="btn-chat">Envoi</button>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /#chatbox-body -->
+
+                    </div>
+                </div>
+            <!-- /#chatbox -->
+
+            <!-- Footer -->
+             <footer class="footer">
+                <p>Ensicafé 2017</p>
+            </footer>
+
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        function toggleMenu(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+            $("#menu-toggle").find('span').toggleClass('glyphicon-forward').toggleClass('glyphicon-backward');
+        }
+
+        $(".close").click(function () {
+            $(this).closest('.panel-custom').fadeOut();
+        });
+
+        $(document).ready(function() {
+            $('#carousel-news').carousel({
+                pause: true,
+                interval: 10000,
+            });
+        });
+    </script>
+
+</body>
+
+</html>
