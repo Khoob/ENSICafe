@@ -3,7 +3,7 @@
     Cream :         #E8DE97
     Mud :           #767366
     Brown :         #433E42
-    Dark Brown :    #25252D
+    Almost black :  #25252D
 */
 
 /* General */
@@ -11,7 +11,6 @@
 html {
     position: relative;
     min-height: 100%;
-    --light-cream: #f7f3d3;
 }
 
 body {
@@ -50,7 +49,7 @@ body {
 
 /* Media */
 
-@media(min-width:768px) {
+@media(min-width: 768px) {
     #wrapper {
         padding-left: 0;
     }
@@ -161,7 +160,7 @@ body {
 
 .sidebar-nav {
     position: absolute;
-    top: 0;
+    top: 0px;
     width: 250px;
     margin: 0;
     padding: 0;
@@ -206,35 +205,55 @@ body {
 }
 
 /* Carousel News */
-#carousel-news img {                        /* Image News */
-    height: 150px;
-    width: 555px;
-    object-fit: cover;
+
+#carousel-news {
+    margin-top: -20px;
+    background-color: white;
+    border: 1px solid #E8DE97;
+    padding-right: 60px;
 }
 
-#carousel-news .carousel-caption {          /* Sous-titres */
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: left;
-    padding: 10px;
-    background:rgba(0,0,0,0.6);
-    text-shadow: none;
+#carousel-news .carousel-inner blockquote {
+    border-left: none;
 }
 
-#carousel-news .list-group {
-    position: absolute;
-    top: 0;
-    right: 0;
+#carousel-news .carousel-inner blockquote h4 {      /* Titre de l'article */
+    font-weight: 600;
 }
 
-#carousel-news .list-group-item {
-    border-radius: 0px;
-    cursor: pointer;
+#carousel-news .carousel-inner blockquote span {
+    font-size: 15px;
 }
 
-#carousel-news .list-group .active {
-    background-color: #25252D;
+#carousel-news .carousel-inner .news-more {
+    text-align: right;
+    font-size: 12px;
+}
+
+#carousel-news .carousel-indicators {
+    bottom: 0px;
+}
+
+#carousel-news .carousel-indicators li {
+    background: #767366;
+}
+
+#carousel-news .carousel-indicators .active {
+    background: #25252D;
+}
+
+#carousel-news .carousel-control {
+    background: none;
+    background-image: none;
+    color: #222;
+}
+
+#carousel-news .carousel-control.left {
+    left: -40px;
+}
+
+#carousel-news .carousel-control.right {
+    right: -40px;
 }
 
 /* Panel */
@@ -325,16 +344,110 @@ body {
     border-radius: 20px;
 }
 
+/* Chatbox */
+
+.chatbox-panel {
+    margin-right: -3px;
+    display: inline;
+}
+
+.chatbox-panel .panel {
+    margin-bottom: 0;
+}
+
+#chatbox-collapse {
+    background-color: #FFFFFF;
+}
+
+#chatbox-collapse .panel-body {
+    overflow-y: scroll;
+    height: 250px;
+}
+
+.panel .panel-heading {         /* Barre chat général */
+    background-color: #25252D;
+    cursor: pointer;
+    margin-bottom: -1px;
+}
+
+.panel .glyphicon-chevron-down,
+.panel .glyphicon-comment,
+.panel .chatbox-name {
+    color: #F7F3D3;
+}
+
+.chat {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.chat li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li img {
+    width: 50px;
+    height: 50px;
+}
+
+.chat li.left .chat-body {
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body {
+    margin-right: 60px;
+}
+
+
+.chat li .chat-body p {
+    margin: 0;
+    color: #25252d;
+}
+
+.panel-footer .glyphicon, .chat .glyphicon {
+    margin-right: 5px;
+}
+
+.panel-footer {
+    background-color: #25252d;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
 
 /* Footer */
 
-footer {
+.footer {
+    position: relative;
     color: #f7f3d3;
     background-color: #25252d;
-    bottom: 0;
+    right: 0;
+    bottom: 0px;
+    left: 0;
     width: 100%;
     height: 30px;
-    line-height: 30px;
-    position: fixed;
     text-align: center;
 }
+
+.footer p {
+    display: inline;
+    line-height: 30px;
+}
+
+/* Test */
