@@ -234,16 +234,16 @@
                 </div>
 
                 <div class="panel-comment">
-                                            <img class="img-circle" src="img/profile_test1.png">
-                                            <div class="panel-custom-textarea">
-                                                <textarea rows="2"></textarea>
-                                                <button type="submit" class="[ btn btn-success disabled ]">Envoyer</button>
-                                                <button type="reset" class="[ btn btn-default ]">Annuler</button>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
+                    <img class="img-circle" src="img/profile_test1.png">
+                    <div class="panel-custom-textarea">
+                        <textarea rows="2"></textarea>
+                        <button type="submit" class="[ btn btn-success disabled ]">Envoyer</button>
+                        <button type="reset" class="[ btn btn-default ]">Annuler</button>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-                <!-- /#post3 -->
+            </div>
+            <!-- /#post3 -->
         </div>
     </div>
     <!-- /#post -->
