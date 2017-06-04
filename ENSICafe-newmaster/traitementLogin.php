@@ -3,9 +3,9 @@
 	$reponse=$bdd->query('SELECT id,mail,mdp FROM profil');
 	if(isset($_POST['connexion'])){
 		if(!empty($_POST['mail'])){
-			$mail=$_POST['mail'];
+			$mail=htmlspecialchars($_POST['mail']);
 			if(!empty($_POST['mdp'])){
-				$mdp=$_POST['mdp'];
+				$mdp=sha1($_POST['mdp']);
 				foreach($reponse as $element){
 					if($element['mail']==$mail && $element['mdp']==$mdp){
 					$_SESSION['id']=$element['id'];
