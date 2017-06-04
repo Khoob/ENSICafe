@@ -3,19 +3,19 @@
 	$reponse2=$bdd->query('SELECT mail FROM profil');
 	if(isset($_POST['inscription'])){
 		if(!empty($_POST['nom'])){
-			$nom=$_POST['nom'];
+			$nom=htmlspecialchars($_POST['nom']);
 			if(!empty($_POST['prenom'])){
-				$prenom=$_POST['prenom'];
+				$prenom=htmlspecialchars($_POST['prenom']);
 				if(!empty($_POST['mail'])){
-					$mail=$_POST['mail'];
+					$mail=htmlspecialchars($_POST['mail']);
 					if(!empty($_POST['date'])){
-						$date=$_POST['dateNaissance'];
+						$date=htmlspecialchars($_POST['dateNaissance']);
 						if(!empty($_POST['genre'])){
-							$genre=$_POST['genre'];
+							$genre=htmlspecialchars($_POST['genre']);
 							if(!empty($_POST['fonction'])){
-								$fonction=$_POST['fonction'];
+								$fonction=htmlspecialchars($_POST['fonction']);
 								if(!empty($_POST['mdp'])){
-									$mdp=$_POST['mdp'];
+									$mdp=sha1($_POST['mdp']);
 									foreach($reponse2 as $amail){
 										if($amail['mail']==$mail){
 											redir("Inscription.php");
