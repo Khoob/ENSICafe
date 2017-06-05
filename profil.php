@@ -27,17 +27,12 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4 class="panel-title">
-						<a class="accordion-toggle btn-block" data-toggle="collapse" href="#collapseOne"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Bio</a>
+						<a class="accordion-toggle btn-block" data-toggle="collapse" href="#collapseOne"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Actions</a>
 					</h4>
 				</div>
 				<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
 					<div class="panel-body">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Manger une pomme, envoyer un message, etc
 					</div>
 				</div>
 			</div>
@@ -47,17 +42,25 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4 class="panel-title">
-						<a class="accordion-toggle btn-block" data-toggle="collapse" href="#collapseTwo"><span class="glyphicon glyphicon-road" aria-hidden="true"></span>Parcours</a>
+						<a class="accordion-toggle btn-block" data-toggle="collapse" href="#collapseOne"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Bio</a>
 					</h4>
 				</div>
 				<div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel">
 					<div class="panel-body">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<table class="table">
+							<tr>
+								<td>Spécialité :</td>
+								<td>Informatique &amp; Réseaux</td>
+							</tr>
+							<tr>
+								<td>Genre :</td>
+								<td>Homme</td>
+							</tr>
+							<tr>
+								<td>Âge</td>
+								<td>12 ans</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>
@@ -67,7 +70,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4 class="panel-title">
-						<a class="accordion-toggle btn-block" data-toggle="collapse" href="#collapseThree"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>Un autre panel ?</a>
+						<a class="accordion-toggle btn-block" data-toggle="collapse" href="#collapseTwo"><span class="glyphicon glyphicon-road" aria-hidden="true"></span>Parcours</a>
 					</h4>
 				</div>
 				<div id="collapseThree" class="panel-collapse collapse in" role="tabpanel">

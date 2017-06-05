@@ -9,9 +9,7 @@
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
                     <li class="sidebar-brand">
-                        <a href="#">
-                            Profil
-                        </a>
+                        <a href="profil.php">Profil</a>
                     </li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Blabla</a></li>

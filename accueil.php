@@ -116,6 +116,7 @@
                     <span class="label label-info">Chat</span>
                     <span class="label label-warning">Mangeur de croquettes</span>
                     <h5><span>Il y a 5 minutes</span></h5>
+                    <div class="border-bottom"></div>
                 </div>
 
                 <!-- Corps du message -->
@@ -165,6 +166,7 @@
                     <h3>Kermit</h3>
                     <span class="label label-success">Grenouille</span>
                     <h5><span>Il y a 8 minutes et 14 nanosecondes</span></h5>
+                    <div class="border-bottom"></div>
                 </div>
 
                 <div class="panel-body">
@@ -211,6 +213,54 @@
                     <span class="label label-info">Chat</span>
                     <span class="label label-warning">Mangeur de croquettes</span>
                     <h5><span>Il y a 30 minutes</span></h5>
+                    <div class="border-bottom"></div>
+                </div>
+
+                <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <div class="pull-left">
+                        <div class="input-placeholder">Commenter...</div>
+                    </div>
+
+                    <div class="pull-right">
+                        <button type="button" class="btn btn-basic btn-circle"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                        <button type="button" class="btn btn-primary btn-circle"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                        <button type="button" class="btn btn-danger btn-circle"><span class="glyphicon glyphicon-heart"></span></button>
+                    </div>
+                </div>
+
+                <div class="panel-comment">
+                    <img class="img-circle" src="img/profile_test1.png">
+                    <div class="panel-custom-textarea">
+                        <textarea rows="2"></textarea>
+                        <button type="submit" class="[ btn btn-success disabled ]">Envoyer</button>
+                        <button type="reset" class="[ btn btn-default ]">Annuler</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- /#post3 -->
+
+            <!-- Post 3 -->
+            <div class="[panel panel-default] panel-custom">
+                <div class="panel-heading">
+                    <button type="btn" class="close">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <img class="[ img-circle pull-left ]" src="img/profile_test1.png" alt="profile.jpg"/>
+                    <h3>Le chat blasé du designer</h3>
+                    <span class="label label-info">Chat</span>
+                    <span class="label label-warning">Mangeur de croquettes</span>
+                    <h5><span>Il y a 30 minutes</span></h5>
+                    <div class="border-bottom"></div>
                 </div>
 
                 <div class="panel-body">

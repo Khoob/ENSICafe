@@ -162,6 +162,8 @@ body {
     background-color: #25252d;
     margin-left: -5px;
     margin-top: -20px;
+    position: fixed;
+    z-index: 1;
 }
 
 /* ---------- Sidebar ---------- */
@@ -215,9 +217,9 @@ body {
 /* ---------- Carousel News ---------- */
 
 #carousel-news {
-    margin-top: -20px;
     background-color: white;
     border: 1px solid #E8DE97;
+    border-radius: 5px;
     padding-right: 60px;
 }
 
@@ -302,6 +304,15 @@ body {
 .panel-custom > .panel-heading {
     margin-top: 5px;
     padding-bottom: 5px;
+}
+
+.panel-custom > .panel-heading > .border-bottom {
+    width: 35%;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: -10px;
 }
 
 .panel-custom > .panel-heading > button:focus {
@@ -536,6 +547,8 @@ body {
     box-sizing: border-box;
     overflow: hidden;
     text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .profile-main > .profile-background > img {
@@ -596,4 +609,22 @@ body {
 
 .panel-profile .panel-heading span {
     margin-right: 10px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+
+
+/* ---------- club.php ---------- */
+
+.club-panel {
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+.club-title {
+    padding: 0px;
+    min-height: 40px;
+    border-bottom: 1px solid #eee;
 }
