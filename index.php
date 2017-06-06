@@ -63,8 +63,14 @@
 
                                 <label for="mail">Adresse mail</label>
                                 <input name="mail" required="required" type="email" placeholder="prenom.nom@uha.fr"/>
+                                
+                                <label for="mail">Confirmer l'adresse mail</label>
+                                <input name="mail" required="required" type="email" placeholder="prenom.nom@uha.fr"/>
 
                                 <label for="mdp">Mot de passe</label>
+                                <input type="password" name="mdp" placeholder="mot de passe"/>
+                                
+                                <label for="mdp">Confirmer le mot de passe</label>
                                 <input type="password" name="mdp" placeholder="mot de passe"/>
 
                                 <label for="date">Votre date de naissance</label>
