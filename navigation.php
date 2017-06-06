@@ -10,7 +10,7 @@
             <div>
                 <ul class="nav navbar-nav pull-right">
                     <li><a href="accueil.php"><span class="glyphicon glyphicon-check"></span> Accueil</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-check"></span> Se déconnecter</a></li>
+                    <li><a href="index.php"><span class="glyphicon glyphicon-check"></span> Se déconnecter</a></li>
                 </ul>
             </div>
         </div>
