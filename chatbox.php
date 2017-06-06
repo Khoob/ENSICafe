@@ -15,7 +15,7 @@
         <!-- /#chatbox-header -->
 
         <!-- Chatbox window -->
-        <div class="panel-collapse collapse" id="chatbox-collapse">
+        <div class="panel-collapse collapse in" id="chatbox-collapse">
 
             <!-- Chatbox body : affichage des messages -->
             <div class="panel-body">

@@ -52,6 +52,7 @@
             }
         });
 
+         // "Grise" le bouton envoyer (commentaire)
          $('.panel-comment > .panel-custom-textarea > textarea').on('keyup', function(event) {
             var $comment = $(this).closest('.panel-comment');
 
@@ -60,7 +61,40 @@
                 $comment.find('button[type="submit"]').removeClass('disabled');
             }
         });
-     });
+
+         // "Grise" le bouton envoyer (poster publication)
+         $('.panel-publication > .panel-collapse > .panel-body > .publication-msg > textarea').on('keyup', function(event) {
+            var $comment = $(this).closest('.panel-publication');
+
+            $comment.find('button[type="submit"]').addClass('disabled');
+            if ($(this).val().length >= 1) {
+                $comment.find('button[type="submit"]').removeClass('disabled');
+            }
+            });
+        });
+
+        // accueil.php : gère le chargement d'une image lorsqu'on veut créer une publication
+        $(function() {
+            // Reset
+            $('.preview-clear').click(function(){
+                $('.preview-filename').val("");
+                $('.preview-clear').hide();
+                $('.preview-input input:file').val("");
+                $(".preview-input-title").text("Image"); 
+            }); 
+            // Initialise l'aperçu
+            $(".preview-input input:file").change(function (){     
+                var file = this.files[0];
+                var reader = new FileReader();
+            // Insère les données de l'aperçu dans la barre d'envoi
+            reader.onload = function (e) {
+                $(".preview-input-title").text("Changer");
+                $(".preview-clear").show();
+                $(".preview-filename").val(file.name);            
+            }        
+            reader.readAsDataURL(file);
+            });  
+        });
  </script>
 
 </body>

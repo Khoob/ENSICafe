@@ -32,7 +32,7 @@
 				</div>
 				<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
 					<div class="panel-body">
-						Manger une pomme, envoyer un message, etc
+						<button type="button" class="btn btn-danger btn-sm">Message</button>
 					</div>
 				</div>
 			</div>
@@ -42,7 +42,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4 class="panel-title">
-						<a class="accordion-toggle btn-block" data-toggle="collapse" href="#collapseOne"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Bio</a>
+						<a class="accordion-toggle btn-block" data-toggle="collapse" href="#collapseTwo"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Bio</a>
 					</h4>
 				</div>
 				<div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel">
@@ -70,7 +70,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4 class="panel-title">
-						<a class="accordion-toggle btn-block" data-toggle="collapse" href="#collapseTwo"><span class="glyphicon glyphicon-road" aria-hidden="true"></span>Parcours</a>
+						<a class="accordion-toggle btn-block" data-toggle="collapse" href="#collapseThree"><span class="glyphicon glyphicon-road" aria-hidden="true"></span>Parcours</a>
 					</h4>
 				</div>
 				<div id="collapseThree" class="panel-collapse collapse in" role="tabpanel">

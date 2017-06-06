@@ -97,6 +97,54 @@
     <!-- #carousel-news -->
 
 
+    <!-- ********** PUBLICATION : envoyer une publication ********** -->
+
+    <div class="row">
+        <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <!-- Panel -->
+            <div class="panel panel-publication">
+                <div class="panel-heading" id="accordion-toggle" data-toggle="collapse" href="#collapse-publication">
+                    <span class="glyphicon glyphicon-comment"></span><span class="chatbox-name"> Créer une publication</span>
+                    <span class="glyphicon glyphicon-chevron-down pull-left"></span>
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </div>
+
+                <div id="collapse-publication" class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+                        <!-- Send image -->
+                        <div class="input-group preview">
+                            <input type="text" class="form-control preview-filename" disabled="disabled">
+                            <span class="input-group-btn">
+                            <!-- preview-clear button -->
+                            <button type="button" class="btn btn-default preview-clear" style="display:none;">
+                                <span class="glyphicon glyphicon-remove"></span> Annuler
+                            </button>
+                            <!-- preview-input -->
+                            <div class="btn btn-default preview-input">
+                                <span class="glyphicon glyphicon-folder-open"></span>
+                                <span class="preview-input-title">Image</span>
+                                <input type="file" accept="image/png, image/jpeg, image/gif" name="file-preview" placeholder="image .png, .jpeg, .gif" />
+                            </div>
+                            </span>
+                        </div>
+                        <!-- /#send-image -->
+
+                        <!-- Send message -->
+                        <form accept-charset="utf-8" action="" class="publication-msg" method="post">
+                            <textarea class="form-control" name="publier" placeholder="Entrez votre message" rows="2"></textarea>
+                            <button class="[ btn btn-info disabled ]" type="submit">Poster</button>
+                            <button class="[ btn btn-default ]" type="reset">Annuler</button>
+                        </form>
+                        <!-- /#send-message -->
+                    </div>
+                </div>
+            </div>
+            <!-- /#panel -->
+        </div>
+    </div>
+    <!-- /#publication -->
+
+
     <!-- ********** POST : publications sur la page d'accueil ********** -->
 
     <div class="row">
@@ -147,7 +195,7 @@
                         <img class="img-circle" src="img/profile_test1.png">
                         <div class="panel-custom-textarea">
                             <textarea rows="2"></textarea>
-                            <button type="submit" class="[ btn btn-success disabled ]">Envoyer</button>
+                            <button type="submit" class="[ btn btn-info disabled ]">Envoyer</button>
                             <button type="reset" class="[ btn btn-default ]">Annuler</button>
                         </div>
                         <div class="clearfix"></div>
@@ -193,7 +241,7 @@
                         <img class="img-circle" src="img/profile_test1.png">
                         <div class="panel-custom-textarea">
                             <textarea rows="2"></textarea>
-                            <button type="submit" class="[ btn btn-success disabled ]">Envoyer</button>
+                            <button type="submit" class="[ btn btn-info disabled ]">Envoyer</button>
                             <button type="reset" class="[ btn btn-default ]">Annuler</button>
                         </div>
                         <div class="clearfix"></div>
@@ -240,7 +288,7 @@
                     <img class="img-circle" src="img/profile_test1.png">
                     <div class="panel-custom-textarea">
                         <textarea rows="2"></textarea>
-                        <button type="submit" class="[ btn btn-success disabled ]">Envoyer</button>
+                        <button type="submit" class="[ btn btn-info disabled ]">Envoyer</button>
                         <button type="reset" class="[ btn btn-default ]">Annuler</button>
                     </div>
                     <div class="clearfix"></div>
@@ -287,7 +335,7 @@
                     <img class="img-circle" src="img/profile_test1.png">
                     <div class="panel-custom-textarea">
                         <textarea rows="2"></textarea>
-                        <button type="submit" class="[ btn btn-success disabled ]">Envoyer</button>
+                        <button type="submit" class="[ btn btn-info disabled ]">Envoyer</button>
                         <button type="reset" class="[ btn btn-default ]">Annuler</button>
                     </div>
                     <div class="clearfix"></div>
