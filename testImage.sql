@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  mer. 07 juin 2017 à 10:50
+-- Généré le :  mer. 07 juin 2017 à 14:25
 -- Version du serveur :  5.7.17
 -- Version de PHP :  5.6.30
 
@@ -48,7 +48,8 @@ INSERT INTO `image` (`id`, `url`, `stockage`) VALUES
 (15, 'http://hdqwalls.com/download/dva-overwatch-artwork-lu-2048x1152.jpg', 'url'),
 (16, '9a80866e4f9878f3b710d4e1ab8d05a1.png', 'disque'),
 (17, '0a2f67619fd8041da4946f2e5ed844fe.jpg', 'disque'),
-(18, 'https://www.jvfrance.com/wp-content/uploads/2015/06/vanquish_large.jpeg', 'url');
+(18, 'https://www.jvfrance.com/wp-content/uploads/2015/06/vanquish_large.jpeg', 'url'),
+(19, '5827bb835df6ae23e165fb749dfb49b3.jpeg', 'disque');
 
 -- --------------------------------------------------------
 
@@ -61,6 +62,16 @@ CREATE TABLE `video` (
   `url` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
   `stockage` varchar(255) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Déchargement des données de la table `video`
+--
+
+INSERT INTO `video` (`id`, `url`, `stockage`) VALUES
+(15, '[HorribleSubs] Atom - The Beginning - 07 [720p]_HD.mp4', 'disque'),
+(14, 'eromanga-sensei_9_HD.mp4', 'disque'),
+(16, 'https://www.youtube.com/watch?v=g6oUwk-5eyg', 'url'),
+(18, 'https://www.youtube.com/watch?v=a9jFnUJenzg', 'url');
 
 --
 -- Index pour les tables déchargées
@@ -86,12 +97,12 @@ ALTER TABLE `video`
 -- AUTO_INCREMENT pour la table `image`
 --
 ALTER TABLE `image`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT pour la table `video`
 --
 ALTER TABLE `video`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
