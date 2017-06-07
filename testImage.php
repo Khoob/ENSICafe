@@ -34,7 +34,7 @@ if(isset($_POST['upload'])){
 	{
 		 $erreur = 'Le fichier est trop gros...';
 	}
-	if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
+	if(!isset($erreur) && empty($_POST['image'])) //S'il n'y a pas d'erreur, on upload
 	{
 		 //On formate le nom du fichier ici...
 		 $fichier = strtr($fichier, 
