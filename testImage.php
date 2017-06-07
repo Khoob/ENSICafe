@@ -34,7 +34,7 @@ if(isset($_POST['upload'])){
 	{
 		 $erreur = 'Le fichier est trop gros...';
 	}
-	if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
+	if(!isset($erreur) && empty($_POST['image'])) //S'il n'y a pas d'erreur, on upload
 	{
 		 //On formate le nom du fichier ici...
 		 $fichier = strtr($fichier, 
@@ -57,22 +57,22 @@ if(isset($_POST['upload'])){
 	if(!empty($fichier)){
 		$image = htmlspecialchars($fichier);
 		$stockage="disque";
-		echo " test ";
 		$insertion = $bdd->prepare('INSERT INTO image(url,stockage) VALUES(?,?)');
 		$insertion->execute(array($fichier,$stockage));
+		/* pour tester la requete sql
 		if(!empty($insertion)){
 			print_r($bdd->errorInfo());
-		}
+		}*/
 	}
 	if(!empty($_POST['image'])){
 		$image2 = htmlspecialchars($_POST['image']);
 		$stockage="url";
-		echo " test 2 ";
 		$insertion2 = $bdd->prepare('INSERT INTO image(url,stockage) VALUES(?,?)');
 		$insertion2->execute(array($image2,$stockage));
+		/* pour tester la requete sql
 		if(!empty($insertion2)){
 			print_r($bdd->errorInfo());
-		}
+		}*/
 	}
 }
 ?>

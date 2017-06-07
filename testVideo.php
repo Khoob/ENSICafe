@@ -9,7 +9,7 @@ try{
 if(is_dir($dossier)){
 } else{
    mkdir($dossier);
-}/*
+}/* pour modifier les limites du POST?
 if(is_dir(".user.ini")){
 } else{
    mkdir(".user.ini");
@@ -31,12 +31,12 @@ if(isset($_POST['upload'])){
 	$fichier = basename($_FILES['avatar']['name']);
 	$taille_maxi = 100000000;
 	$taille = filesize($_FILES['avatar']['tmp_name']);
-	$extensions = array('.mp4', '.avi', '.mov', '.mpg');
+	$extensions = array('.mp4', '.ogv', '.webm');
 	$extension = strrchr($_FILES['avatar']['name'], '.'); 
 	//Début des vérifications de sécurité...
 	if(!in_array($extension, $extensions) && empty($_POST['video'])) //Si l'extension n'est pas dans le tableau
 	{
-		 $erreur = 'Vous devez uploader un fichier de type mp4, avi, mov, mpg.';
+		 $erreur = 'Vous devez uploader un fichier de type mp4,ogv, webm.';
 	}
 	if($taille>$taille_maxi && empty($_POST['video']))
 	{
@@ -65,22 +65,22 @@ if(isset($_POST['upload'])){
 	if(!empty($fichier)){
 		$video = htmlspecialchars($fichier);
 		$stockage="disque";
-		echo " test ";
 		$insertion = $bdd->prepare('INSERT INTO video(url,stockage) VALUES(?,?)');
 		$insertion->execute(array($fichier,$stockage));
+		/* pour tester la requete sql
 		if(!empty($insertion)){
 			print_r($bdd->errorInfo());
-		}
+		}*/
 	}
 	if(!empty($_POST['video'])){
 		$video2 = htmlspecialchars($_POST['video']);
 		$stockage="url";
-		echo " test 2 ";
 		$insertion2 = $bdd->prepare('INSERT INTO video(url,stockage) VALUES(?,?)');
 		$insertion2->execute(array($video2,$stockage));
+		/* pour tester la requete sql
 		if(!empty($insertion2)){
 			print_r($bdd->errorInfo());
-		}
+		}*/
 	}
 }
 ?>
